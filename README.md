@@ -46,9 +46,4 @@ Repository gồm 2 bài React Native:
 - AsyncStorage
 - json-server
 
-## Cách chạy ProductApp
 
-Di chuyển vào thư mục:
-
-```bash
-cd ProductApp_Midterm
