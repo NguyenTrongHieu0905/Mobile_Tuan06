@@ -1,0 +1,268 @@
+{
+  "categories": [
+    {
+      "id": "c1",
+      "name": "Kỹ năng"
+    },
+    {
+      "id": "c2",
+      "name": "Công nghệ"
+    },
+    {
+      "id": "c3",
+      "name": "Văn học"
+    }
+  ],
+  "books": [
+    {
+      "id": "b1",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "categoryId": "c2",
+      "price": 250000,
+      "image": "https://picsum.photos/seed/book1/300/450",
+      "stock": 10,
+      "description": "Tư duy và kỹ thuật viết mã sạch, dễ đọc và dễ bảo trì."
+    },
+    {
+      "id": "b2",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "categoryId": "c1",
+      "price": 180000,
+      "image": "https://picsum.photos/seed/book2/300/450",
+      "stock": 8,
+      "description": "Xây dựng thói quen tốt bằng những thay đổi nhỏ nhưng bền vững."
+    },
+    {
+      "id": "b3",
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt",
+      "categoryId": "c2",
+      "price": 290000,
+      "image": "https://picsum.photos/seed/book3/300/450",
+      "stock": 6,
+      "description": "Các nguyên tắc thực tiễn để phát triển phần mềm tốt hơn."
+    },
+    {
+      "id": "b4",
+      "title": "Nhà Giả Kim",
+      "author": "Paulo Coelho",
+      "categoryId": "c3",
+      "price": 95000,
+      "image": "https://picsum.photos/seed/book4/300/450",
+      "stock": 12,
+      "description": "Tiểu thuyết về hành trình theo đuổi ước mơ."
+    },
+    {
+      "id": "b5",
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "categoryId": "c1",
+      "price": 160000,
+      "image": "https://picsum.photos/seed/book5/300/450",
+      "stock": 9,
+      "description": "Rèn luyện khả năng tập trung sâu trong thời đại xao nhãng."
+    },
+    {
+      "id": "b6",
+      "title": "Design Patterns",
+      "author": "GoF",
+      "categoryId": "c2",
+      "price": 310000,
+      "image": "https://picsum.photos/seed/book6/300/450",
+      "stock": 4,
+      "description": "Các mẫu thiết kế kinh điển trong lập trình hướng đối tượng."
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "name": "Demo User",
+      "email": "demo@book.vn",
+      "password": "123456",
+      "phone": "0900000000"
+    },
+    {
+      "name": "Nguyễn Trọng Hiếu",
+      "email": "tronghieugl2004@gmail.com",
+      "password": "12345678",
+      "phone": "",
+      "id": "nHKzunG1Dyc"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "bookId": "b1",
+      "userId": "u1",
+      "userName": "Demo User",
+      "rating": 5,
+      "comment": "Sách rất hữu ích.",
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "bookId": "b4",
+      "userId": "nHKzunG1Dyc",
+      "userName": "Nguyễn Trọng Hiếu",
+      "rating": 5,
+      "comment": "",
+      "createdAt": "2026-09-29T19:11:21.074Z",
+      "id": "KzIszHbakzA"
+    },
+    {
+      "bookId": "b4",
+      "userId": "nHKzunG1Dyc",
+      "userName": "Nguyễn Trọng Hiếu",
+      "rating": 5,
+      "comment": "hay",
+      "createdAt": "2026-09-29T19:16:04.219Z",
+      "id": "_0sZudqsHDE"
+    }
+  ],
+  "orders": [
+    {
+      "id": "o1",
+      "userId": "u1",
+      "items": [
+        {
+          "bookId": "b2",
+          "title": "Atomic Habits",
+          "price": 180000,
+          "quantity": 1
+        }
+      ],
+      "total": 180000,
+      "status": "Hoàn tất",
+      "createdAt": "2026-08-20T08:00:00.000Z",
+      "shipping": {
+        "name": "Demo User",
+        "phone": "0900000000",
+        "address": "TP.HCM"
+      },
+      "payment": "COD"
+    },
+    {
+      "userId": "nHKzunG1Dyc",
+      "items": [
+        {
+          "bookId": "b1",
+          "title": "Clean Code",
+          "price": 250000,
+          "quantity": 1
+        },
+        {
+          "bookId": "b3",
+          "title": "The Pragmatic Programmer",
+          "price": 290000,
+          "quantity": 1
+        },
+        {
+          "bookId": "b4",
+          "title": "Nhà Giả Kim",
+          "price": 95000,
+          "quantity": 1
+        }
+      ],
+      "total": 571500,
+      "status": "Đang xử lý",
+      "createdAt": "2026-09-29T19:15:00.821Z",
+      "shipping": {
+        "name": "Nguyễn Trọng Hiếu",
+        "phone": "0976410755",
+        "address": "24 Nguyễn Văn Bảo"
+      },
+      "payment": "COD",
+      "id": "vrKzwoOO3HE"
+    },
+    {
+      "userId": "nHKzunG1Dyc",
+      "items": [],
+      "total": 571500,
+      "status": "Đang xử lý",
+      "createdAt": "2026-09-29T19:15:02.393Z",
+      "shipping": {
+        "name": "Nguyễn Trọng Hiếu",
+        "phone": "0976410755",
+        "address": "24 Nguyễn Văn Bảo"
+      },
+      "payment": "COD",
+      "id": "FNSp60J23y0"
+    },
+    {
+      "userId": "nHKzunG1Dyc",
+      "items": [],
+      "total": 571500,
+      "status": "Đang xử lý",
+      "createdAt": "2026-09-29T19:15:03.620Z",
+      "shipping": {
+        "name": "Nguyễn Trọng Hiếu",
+        "phone": "0976410755",
+        "address": "24 Nguyễn Văn Bảo"
+      },
+      "payment": "BANK",
+      "id": "giTHNjpdG7M"
+    },
+    {
+      "userId": "nHKzunG1Dyc",
+      "items": [],
+      "total": 571500,
+      "status": "Đang xử lý",
+      "createdAt": "2026-09-29T19:15:04.005Z",
+      "shipping": {
+        "name": "Nguyễn Trọng Hiếu",
+        "phone": "0976410755",
+        "address": "24 Nguyễn Văn Bảo"
+      },
+      "payment": "BANK",
+      "id": "9lCqY5bhVis"
+    },
+    {
+      "userId": "nHKzunG1Dyc",
+      "items": [],
+      "total": 571500,
+      "status": "Đang xử lý",
+      "createdAt": "2026-09-29T19:15:04.083Z",
+      "shipping": {
+        "name": "Nguyễn Trọng Hiếu",
+        "phone": "0976410755",
+        "address": "24 Nguyễn Văn Bảo"
+      },
+      "payment": "BANK",
+      "id": "zkB2JpniUjE"
+    },
+    {
+      "userId": "nHKzunG1Dyc",
+      "items": [],
+      "total": 571500,
+      "status": "Đang xử lý",
+      "createdAt": "2026-09-29T19:15:05.432Z",
+      "shipping": {
+        "name": "Nguyễn Trọng Hiếu",
+        "phone": "0976410755",
+        "address": "24 Nguyễn Văn Bảo"
+      },
+      "payment": "COD",
+      "id": "f78vR72TBcs"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n1",
+      "title": "Chào mừng",
+      "body": "Chào mừng bạn đến BookStore Online.",
+      "time": "Hôm nay",
+      "read": false,
+      "target": "Tabs"
+    },
+    {
+      "id": "n2",
+      "title": "Đơn hàng đã hoàn tất",
+      "body": "Đơn hàng mẫu đã được giao thành công.",
+      "time": "20/08/2026",
+      "read": true,
+      "target": "Orders"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

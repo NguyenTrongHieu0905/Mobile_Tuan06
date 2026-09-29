@@ -1,0 +1,2 @@
+import {createSlice,PayloadAction} from '@reduxjs/toolkit';
+const slice=createSlice({name:'wishlist',initialState:{ids:[] as string[]},reducers:{hydrateWishlist(s,a:PayloadAction<string[]>){s.ids=a.payload},toggleWishlist(s,a:PayloadAction<string>){s.ids=s.ids.includes(a.payload)?s.ids.filter(x=>x!==a.payload):[...s.ids,a.payload]}}}); export const {hydrateWishlist,toggleWishlist}=slice.actions; export default slice.reducer;

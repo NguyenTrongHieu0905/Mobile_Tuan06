@@ -1,0 +1,1 @@
+import React from 'react';import {StyleSheet,Text,View} from 'react-native';export default function EmptyState({text}:{text:string}){return <View style={s.box}><Text style={s.text}>{text}</Text></View>}const s=StyleSheet.create({box:{padding:30,alignItems:'center'},text:{color:'#64748b',textAlign:'center'}});

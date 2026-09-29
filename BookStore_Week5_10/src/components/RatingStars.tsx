@@ -1,0 +1,1 @@
+import React from 'react';import {Text} from 'react-native';export default function RatingStars({value,size=18}:{value:number;size?:number}){const n=Math.max(0,Math.min(5,Math.round(value)));return <Text style={{fontSize:size}}>{'★'.repeat(n)}{'☆'.repeat(5-n)} {value.toFixed(1)}</Text>}

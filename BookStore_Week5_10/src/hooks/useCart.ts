@@ -1,0 +1,2 @@
+import {useDispatch,useSelector} from 'react-redux'; import {RootState} from '../store'; import {addToCart,removeFromCart,updateQuantity,clearCart} from '../store/cartSlice';
+export function useCart(){const dispatch=useDispatch(); const items=useSelector((s:RootState)=>s.cart.items); return {items,totalQuantity:items.reduce((a,b)=>a+b.quantity,0),add:(id:string)=>dispatch(addToCart(id)),remove:(id:string)=>dispatch(removeFromCart(id)),update:(id:string,q:number)=>dispatch(updateQuantity({bookId:id,quantity:q})),clear:()=>dispatch(clearCart())};}
